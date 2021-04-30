@@ -2,9 +2,10 @@
 
 For the OLD Microservices application, we will henceforth call this OLD_Microservices.
 
-In this sample, we will implement some of the strategies discussed here into a Microservices Nodejs sample application. Lets call it Old (pre-applying some of these strategies) and New(after implementing strategies).
+In this sample, we will implement some of the strategies discussed here into a Microservices Nodejs sample application. 
+Lets call it Old (pre-applying some of these strategies) and New(after implementing strategies).
 
-Reference link : 
+This was developed from the AWS Sample [here](https://github.com/awslabs/amazon-ecs-nodejs-microservices/tree/master/3-microservices)
 
 In this example the microservices application is deployed on ECS.
 
@@ -69,7 +70,7 @@ Region : US-WEST-1
 30 instances x 0.117 USD On Demand hourly cost x 730 hrs in a month 
 = 2562.00 USD
 
-Total cost (monthly): 2562.00 USD
+**Total cost (monthly): 2562.00 USD**
 
 Reference -> [AWS Pricing Calculator](https://calculator.aws/#/)
 

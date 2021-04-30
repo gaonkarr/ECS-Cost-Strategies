@@ -22,12 +22,14 @@ __Cluster AutoScaling and Capacity Providers__
 ECS Cluster Auto Scaling is a new capability for ECS to manage the scaling of EC2 Auto Scaling Groups. With Cluster Auto Scaling, you can configure ECS to scale your ASG automatically, and just focus on running your tasks. ECS will ensure the ASG scales in and out as needed with no further intervention required. To fill the gap of Managed Autoscaling, where ECS and EC2 instances can communicate scaling effectively, we launched a new feature in ECS called as ECS Capacity Providers. Cluster Auto Scaling relies on ECS capacity providers.
 
 __Use combination of OnDemand with Spot instances__
-Spot Instances: Same as pay-as-you-go pricing as On-Demand, but at up to 90% off. EC2 can reclaim with a 2 minute warning. Best for stateless or fault tolerant workloads, and that additional scale capacity.
+
+Spot Instances have same as pay-as-you-go pricing as On-Demand, but at up to 90% off. EC2 can reclaim with a 2 minute warning. Best for stateless or fault tolerant workloads, and that additional scale capacity.
 Over the last few years we have made significant changes to the spot pricing models. Each instance family and size, in each availability zone in every region is a separate spot pool, meaning that both price and capacity on each pool fluctuates infrequently and independently from each other; so if you use the same instance type on three different AZs you’re effectively consuming capacity from three different spot pools. 
 
 __Use combination of OnDemand with Spot instances__
 
 __Convert Launch Configuration to Launch Template__
+
 To benefits from above features, Autoscaling group must be launched with a launch template instead of a Launch Configuration. 
 
 ## Prerequisites
@@ -83,7 +85,7 @@ Spot instances (monthly): 461.21 USD
 
 **Total cost** (On Demand + Spot monthly): 2169.21 USD
 
-That was approx $400 less than previous sample, inspite of 10 additional instances.
+**That was approx $400 less than previous sample, inspite of 10 additional instances.**
 
 Further cost savings can be done by purchasing Savings plans. For example, the EC2 Instance Savings Plans rate for m4.large in the US West (N. California) for 1 Year term and All Upfront is 0.0851 USD
 
