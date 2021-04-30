@@ -9,7 +9,7 @@ Reference link :
 In this example the microservices application is deployed on ECS.
 
 
-![Reference architecture of microservices on EC2 Container Service](/new-microservice-containers-ecs.png)
+![Reference architecture of microservices on EC2 Container Service](../images/new-microservice-containers-ecs.png)
 ![Reference architecture of microservices on EC2 Container Service with Fargate](../images/new-microservice-containers-ecs-fargate.png)
 
 
