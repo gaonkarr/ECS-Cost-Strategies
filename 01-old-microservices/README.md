@@ -9,7 +9,7 @@ Reference link :
 In this example the microservices application is deployed on ECS.
 
 
-![Reference architecture of microservices on EC2 Container Service](../images/old-microservice-containers.png)
+![Reference architecture of microservices on EC2 Container Service](../images/old-microservice-containers-ecs.png)
 
 ## Application Microsevices
 

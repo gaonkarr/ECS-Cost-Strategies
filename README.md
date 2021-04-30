@@ -23,12 +23,14 @@ For deployment follow steps in each folder :
 ## Some of the common strategies are listen below :
 
 __Rightsizing:__
+
 __Stop spending money on undifferentiated heavy lifting:__
+
 __Match capacity with demand:__
+
 __Choose right pricing model:__
+
 __Expenditure and Usage Awareness:__
 
-
-![Reference architecture of microservices on EC2 Container Service](../images/microservice-containers.png)
 
 ## References & More
