@@ -36,9 +36,16 @@ __Expenditure and Usage Awareness:__
 ## References & More
 
 Amazon EC2 Spot Instances Workshop - https://ec2spotworkshops.com/ 
+
 Amazon ECS Workshop - https://ecsworkshop.com/ 
+
 Open source tools 
+
 C3vis - https://github.com/ExpediaDotCom/c3vis 
+
 Amazon EC2 instance selector - https://github.com/aws/amazon-ec2-instance-selector 
+
 AWS Well Architected cost optimization labs - https://www.wellarchitectedlabs.com/cost/ 
+
 3rd party CUDOS Workshop - https://cudos.workshop.aws/ 
+
