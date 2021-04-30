@@ -32,6 +32,7 @@ If you need help installing, please follow the link below:
 
 
 ## Deployment for OLD_Microservices
+Replace items written in <> with actual values
 
 1. Launch an ECS cluster using the Cloudformation template:
 
@@ -40,7 +41,8 @@ If you need help installing, please follow the link below:
    --template-file infrastructure/ecs.yml \
    --region <region> \
    --stack-name <stack name> \
-   --capabilities CAPABILITY_NAMED_IAM
+   --capabilities CAPABILITY_NAMED_IAM \
+   --tags Purpose=CostStrategiesDemo Project=OldMicroservices
    ```
 
 2. Deploy the services onto your cluster: 
@@ -58,7 +60,7 @@ Load test this with your favourite load testing application.
 You could also use, [Distributed Load Testing on AWS Solution](https://aws.amazon.com/solutions/implementations/distributed-load-testing-on-aws/) from AWS Solutions Library.
 
 In my load test, I could see below 
-![CloudWatch Dashboard screenshot]()
+![CloudWatch Dashboard screenshot](../images/old-cloudwatch-dashboard.png)
 
 ## Load test Compute cost estimate
 
