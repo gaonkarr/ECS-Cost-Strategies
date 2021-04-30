@@ -10,9 +10,6 @@ In this example the microservices application is deployed on ECS.
 
 
 ![Reference architecture of microservices on EC2 Container Service](../images/new-microservice-containers-ecs.png)
-![Reference architecture of microservices on EC2 Container Service with Fargate](../images/new-microservice-containers-ecs-fargate.png)
-
-
 
 
 ## Changes made to the architecture
@@ -21,6 +18,7 @@ The sample has 3 services defined behind an Amazon Application Load Balancer (AL
 So each service will only serve one particular class of REST object, and nothing else. This will give us some significant advantages in our ability to independently monitor and independently scale each service.
 
 __Capacity Providers__
+
 __Spot instances__
 
 
@@ -28,7 +26,7 @@ __Spot instances__
 You will need to have the latest version of the AWS CLI installed and configured before running the deployment script. 
 If you need help installing, please follow the link below:
 
-[Installing the AWS CLI ](https://)
+[Installing the AWS CLI ](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
 
 
 ## Deployment for NEW_Microservices
@@ -46,12 +44,12 @@ If you need help installing, please follow the link below:
 2. Deploy the services onto your cluster: 
 
    ```
-   $ ./deploy.sh <region> <stack name>
+   $ ./infrastructure/deploy.sh <region> <stack name>
    ```
    
 3. Deploy the CloudWatch dashboard:
    ```
-   $ ./deploy-cw-dashboard.sh <region> <stack name>
+   $ ./infrastructure/deploy-cw-dashboard.sh <region> <stack name>
    ```
 
 Load test this with your favourite load testing application. 
@@ -83,4 +81,7 @@ EC2 Instance Savings Plans rate for m4.large in the US West (N. California) for 
 Reference -> [AWS Pricing Calculator](https://calculator.aws/#/)
 
 
+
+Possible future upgrade :
+![Reference architecture of microservices on EC2 Container Service with Fargate](../images/new-microservice-containers-ecs-fargate.png)
 

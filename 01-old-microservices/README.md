@@ -46,12 +46,12 @@ If you need help installing, please follow the link below:
 2. Deploy the services onto your cluster: 
 
    ```
-   $ ./deploy.sh <region> <stack name>
+   $ ./infrastructure/deploy.sh <region> <stack name>
    ```
    
 3. Deploy the CloudWatch dashboard:
    ```
-   $ ./deploy-cw-dashboard.sh <region> <stack name>
+   $ ./infrastructure/deploy-cw-dashboard.sh <region> <stack name>
    ```
 
 Load test this with your favourite load testing application. 
